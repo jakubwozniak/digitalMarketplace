@@ -58,10 +58,26 @@
   }
 
   .button {
-    @apply flex whitespace-nowrap items-center justify-center h-10 px-4 py-2 w-full font-medium rounded-md hover:bg-muted hover:bg-opacity-75;
+    @apply flex whitespace-nowrap items-center justify-center h-10 px-4 py-2 w-full font-medium text-black;
+  }
+
+  .button-main {
+    @apply rounded-md hover:bg-muted hover:bg-opacity-75;
+  }
+
+  .button-underscore {
+    @apply transition-all duration-300 border-transparent border-b-2 hover:border-primary;
+  }
+
+  .button-underscore-active {
+    @apply border-primary;
   }
 
   .button-active {
     @apply rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+
+  .button-transparent-active {
+    @apply text-primary;
   }
 }

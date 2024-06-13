@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import NavbarLinks from "./NavbarLinks";
 import { Button } from "./ui/button";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,10 @@ const Navbar = () => {
 
       <div className="flex items-center gap-x-2 ms-auto md:col-span-3">
         <Button>Sign In</Button>
-        <Button>Sign Up</Button>
+        <Button variant="secondary">Sign Up</Button>
+        <div className="md:hidden">
+          <MobileNavbar />
+        </div>
       </div>
     </nav>
   );

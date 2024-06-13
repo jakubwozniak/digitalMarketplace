@@ -19,8 +19,8 @@ const NavbarLinks = () => {
           <Link
             href={link.route}
             key={link.label}
-            className={cn("button", {
-              "button-active": isActive,
+            className={cn("button button-underscore", {
+              "button-underscore-active": isActive,
             })}
           >
             {link.label}
